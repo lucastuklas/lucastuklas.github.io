@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Unna", serif;
 }
 
 @media only screen and (max-width: 50em) {
@@ -26,10 +27,10 @@ body {
 }
 
 .landing-page-section .title {
-  font-size: 6rem;
-  max-width: 33rem;
+  font-size: 10rem;
+  max-width: min-content;
   margin: auto;
-  line-height: 5rem;
+  line-height: 7rem;
 }
 
 .landing-page-section .description {
