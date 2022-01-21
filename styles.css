@@ -1,92 +1,57 @@
 body {
-  font-family: 'Oswald', sans-serif;
-  background-color: #3aafa9;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.landing-page-section {
-  padding: 200px 0px;
-  position: relative;
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
 }
 
-.logo-container {
-  color: #feffff;
-  position: absolute;
-  top: 0;
-  cursor: pointer;
-}
-
-.logo-container:hover {
-  color: #def2f1
-}
-
-
-.logo-text {
+* {
+  box-sizing: border-box;
   margin: 0;
 }
 
-.qoute-container {
+.landing-page-section {
+  width: fit-content;
+  text-align: center;
+  display: grid;
+  grid-gap: 3rem;
+  padding: 2rem;
+}
+
+.landing-page-section .title {
+  font-size: 6rem;
+  max-width: 33rem;
   margin: auto;
-  max-width: 350px;
-  display: block;
-  cursor: pointer;
-
+  line-height: 5rem;
 }
 
-.quote-logo {
-  color: #2b7a78;
-  display: block;
-  font-weight: bolder;
-  font-size: 60px;
-  font-family: arial;
+.landing-page-section .description {
+  font-size: 1.6rem;
+  border-top: 0.1rem solid #000000;
+  padding-top: 1rem;
 }
 
-.-big {
-  font-size: 110px;
-  font-weight: bold;
-  line-height: 100px;
+.page-nav {
+  display: flex;
+  grid-gap: 1rem;
+  justify-content: center;
 }
 
-.-bright {
-  color: #feffff;
+.page-nav .material-icons {
+  font-size: 1.5rem;
 }
 
-.-bright:hover {
-  color: #def2f1
+.page-nav .nav-link {
+  color: #000000;
 }
 
-
-.quote-text {
-  display: block;
+.page-nav .nav-link:hover {
+  color: midnightblue !important;
 }
-
-.-dark {
-  color: #17252a;
-}
-
-.-dark:hover {
-  color: #2b7a78;
-}
-
-
-.-small {
-  font-size: 28px;
-}
-
-.instagram-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.instagram-link {
-  color: #17252a;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.instagram-link:hover {
-  color: #2b7a78;
-}
-
-
-
